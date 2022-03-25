@@ -1,0 +1,16 @@
+CC=gcc
+CFLAGS=-c -Wall
+
+all: hello
+
+main.o: main.c
+	$(CC) $(CFLAGS) main.c
+
+new_script.o: new_script.c
+	$(CC) $(CFLAGS) new_script.c
+
+hello: main.o new_script.o
+	$(CC) main.o new_script.o -o hello
+
+clean:
+	rm -rf *.o hello
