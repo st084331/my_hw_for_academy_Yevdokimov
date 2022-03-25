@@ -1,0 +1,1 @@
+CMakeLists.txt not found in /Users/akabynda/CLionProjects/hw_academy Select CMakeLists.txt
